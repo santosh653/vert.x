@@ -1,0 +1,22 @@
+# ----------------------------------------------------------------------------
+#
+# Package             : vert.x
+# Source Repo         : https://github.com/eclipse-vertx/vert.x
+# Travis Job Link     : 
+# Created travis.yml  : Yes
+# Maintainer          : Santosh Kulkarni <santoshkulkarni70@gmail.com>
+#
+# Script License      : Apache 2.0
+#
+# ----------------------------------------------------------------------------
+arch: 
+  - amd64
+  - ppc4le
+  
+language: java
+jdk: 
+  - openjdk8
+  - openjdk11
+script:
+  - mvn clean install
+  - mvn test
